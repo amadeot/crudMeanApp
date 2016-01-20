@@ -1,0 +1,23 @@
+{
+  "name": "crud_mean_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mongoose": "^4.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amadeot/crudMeanApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amadeot/crudMeanApp/issues"
+  },
+  "homepage": "https://github.com/amadeot/crudMeanApp#readme"
+}
