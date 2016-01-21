@@ -16,6 +16,11 @@ var characterSchema = mongoose.Schema({
 var Character = mongoose.model('Character', characterSchema);
 
 var fluffy = new Character({ name: 'fluffy', str:16,dex:17,con:16 });
-fluffy.save(function (err, fluffy) {
+
+var incomp = new Character({ name: 'partial'});
+
+
+
+incomp.save(function (err, fluffy) {
   if (err) return console.error(err);
 });

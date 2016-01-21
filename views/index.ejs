@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="PersonApp">
+  <head>
+    <title>people and items</title>
+    <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+    <script type="text/javascript" src="/people_controller.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+<body>
+  <h1>hi</h1>
+  <div ng-controller="PeopleController as people">
+    <form ng-submit="people.add()">
+      <input type="text" placeholder="name" ng-model="people.newPerson.name">
+      <input type="number" placeholder="age" ng-model="people.newPerson.age">
+      <input type="submit">
+    </form>
+    <div ng-repeat="person in people.listAll">
+      <p>Name: {{person.name}}</p>
+      <p>Age: {{person.age}} <button>Edit</button></p>
+      <ul ng-repeat="item in person.items">
+        <li>Item: {{item.type}} Color: {{item.color}}</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
